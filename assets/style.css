@@ -7,6 +7,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
 }
@@ -15,29 +17,44 @@
 
 :root {
 
-    --main-color: #A8D0E6;
-    --body-color: #88f;
-    --container-color: #24305E;
-    --heading-color:#F5F5DC ;
-    --box-color: #F8E9A1;
+    --main-color:#88f ;
+    --bg-color #E6E6FA:
+    --text-color:#24305E ;
+    --hover: #fff;
 }
 
 body {
 
-    color: var (--body-color) ;
-    background-color: var (--main-color) ;
+    color: var(--text-color) ;
+    background-color: var(--bg-color);
 
 }
 
-img {
-
-    width: 100%;
+div > img {
+    max-height: 400px;
+    
 }
 
 section {
-    padding: 3rem 0 2 rem;
+    padding: 50px 10%;
 }
 
+*::selection {
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+
+/* -------------- Home section ------------------*/
+
+.home {
+    position:relative;
+    width: 100%;
+    min-height: 400px;
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+
+}
 a{
     text-decoration: none;
 }
@@ -65,5 +82,9 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
+    
+}
+
+.nav-link {
 
 }
