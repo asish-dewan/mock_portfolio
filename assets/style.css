@@ -15,8 +15,8 @@
 :root {
 
     --main-color:#88f ;
-    --bg-color #E6E6FA:
-    --text-color:#24305E ;
+    --bg-color #E6E6FA;
+    --text-color:#24305E;
     --hover: #fff;
 }
 
@@ -32,7 +32,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 30px;
+}
+
+section {
+    padding: 50px 10%;
 }
 
 .logo {
@@ -69,7 +73,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(61, 179, 226);
+    background-color: rgb(119, 84, 233);
 
 }
 /* Variables */
@@ -83,13 +87,19 @@ body {
 
 /* -------------- Home section ------------------*/
 .logo {
-    float: e;
+    float: ;
 }
 
 .home {
     position:relative;
-    display: grid;
+    width: 100%;
+    min-height: 65vh;
     align-items: center;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    gap: 16px;
+
+    
 }
 
 .profile{
@@ -119,4 +129,21 @@ body {
 .social {
     display: flex;
     flex-direction: column;
+}
+
+/* About section */
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 30px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 16px;
+    margin-top: 32px;
 }
