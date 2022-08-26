@@ -10,10 +10,7 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
 }
-
-/* Variables */
 
 :root {
 
@@ -23,6 +20,60 @@
     --hover: #fff;
 }
 
+li, a, button {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navbar {
+    list-style: none;
+
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar li a {
+    transition: all 0.4s ease 0s;
+    
+}
+
+.navbar li a:hover {
+    color: rgb(71, 71, 201);
+    
+}
+
+button {
+    padding: 10px 25px;
+    background-color: cyan;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s ;
+}
+
+button:hover {
+    background-color: rgb(61, 179, 226);
+
+}
+/* Variables */
+
 body {
 
     color: var(--text-color) ;
@@ -30,61 +81,42 @@ body {
 
 }
 
-div > img {
-    max-height: 400px;
-    
-}
-
-section {
-    padding: 50px 10%;
-}
-
-*::selection {
-    color: var(--bg-color);
-    background: var(--main-color);
-}
-
 /* -------------- Home section ------------------*/
+.logo {
+    float: e;
+}
 
 .home {
     position:relative;
-    width: 100%;
-    min-height: 400px;
     display: grid;
     align-items: center;
-    gap: 1rem;
-
-}
-a{
-    text-decoration: none;
 }
 
-li {
-    list-style: none;
-}
-
-.container {
-    max-width: 960px;
-    margin: auto;
-    width: 100%
-}
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
+.profile{
     width: 100%;
-    z-index: 100;
 
 }
 
-.nav {
+.home.text span {
+    font-size: var(--medium-font);
+    font-weight: 500;
+}
+
+.home-text h1 {
+    font-size: var(--large-font);
+}
+
+.home-text h2 {
+    font-size: ;
+    font-weight: 400;
+}
+
+.home-text p{
+    font-size: var(--p-font);
+    font-weight: 400;
+}
+
+.social {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0px;
-    
-}
-
-.nav-link {
-
+    flex-direction: column;
 }
