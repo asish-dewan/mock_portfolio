@@ -212,13 +212,14 @@ text-align: center;
 .portfolio-img img {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .portfolio-img span {
     position: relative;
     font-size: var(--medium-font);
-    padding: 20px 20px;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
     background-color: lightgray;
 
 }
@@ -229,9 +230,10 @@ text-align: center;
 }
 
 #project1, #project2, #project3 {
-    max-width: 500px;
-    max-height: 500px;
-    display: inline-block;
+    max-width: 50%;
+    max-height: 50%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* ---- Form Section ---- */
