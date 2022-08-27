@@ -14,10 +14,8 @@
 
 :root {
 
-    --main-color:#88f ;
     --bg-color #E6E6FA;
     --text-color:#24305E;
-    --hover: #fff;
     --large-font: 50px;
     --medium-font: 30px;
     --small-font: 16px;
@@ -131,6 +129,7 @@ body {
 
 .home-text h1 {
     font-size: var(--large-font);
+    color: rgb(59, 59, 250);
 }
 
 .home-text h2 {
@@ -153,7 +152,7 @@ body {
     font-size: 30px;
     border: border-box;
     border-radius: 50px;
-    background-color: #88f;
+    background-color: rgb(192, 222, 247);
 
 }
 
@@ -196,8 +195,6 @@ text-align: center;
 }
 
 .portfolio-content{
-    display: grid;
-    grid-template-rows: max-content;
     margin: auto;
     box-sizing: border-box;
     gap: 1rem;
@@ -214,7 +211,16 @@ text-align: center;
 
 .portfolio-img img {
     width: 100%;
-    display: block;
+    display: flex;
+}
+
+.portfolio-img span {
+    position: relative;
+    font-size: var(--medium-font);
+    padding: 20px 20px;
+    margin: auto;
+    background-color: lightgray;
+
 }
 
 .portfolio-img img:hover {
@@ -222,10 +228,19 @@ text-align: center;
     transition: 1s;
 }
 
+#project1, #project2, #project3 {
+    max-width: 500px;
+    max-height: 500px;
+    display: inline-block;
+}
+
+/* ---- Form Section ---- */
 .form {
     position: relative;
-    display: flex;
+    display: grid;
     justify-content: center;
+    margin: auto;
+    padding: 20px 0px;
 }
 
 
@@ -235,12 +250,22 @@ width: 100%;
 padding: 15px;
 margin-bottom: 10px;
 border: none;
-border-radius: 20px;
+border-radius: 20px ;
+background: aliceblue;
+}
+
+.form-inner h3 {
+    font-size: var(--medium-font);
+    padding: 25px 0px;
 }
 
 .footer {
     padding: 30px;
     clear: both;
     text-align: center;
-    background-color: aliceblue;
+    background-color: rgb(182, 243, 235);
+}
+
+@media only screen and (min-width: 800px) {
+    
 }

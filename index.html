@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <h1 href="#" class="logo"> Asish-Dewan </h1>
+        <h1 href="#Home" class="logo"> Asish-Dewan </h1>
             <nav>
                 <ul class ="navbar"> 
                     <li> <a href="#Home"> Home </a></li>
@@ -27,7 +27,7 @@
                     <li> <a href="#Portfolio"> Portfolio </a></li>
                 </ul>
             </nav> 
-            <a class="cta" href="#"> <button> Connect With Me </button></a>
+            <a href="#Connect"> <button> Connect With Me </button></a>
     </header>
     <!---------------- Home Section ---------------->
 
@@ -53,7 +53,7 @@
     </section>
 <!-- About Me section -->
     <main> 
-        <section class="about" id="'about">
+        <section class="about" id="About">
             <div class="heading">
                 <h2> README. </h2> 
             </div>
@@ -74,7 +74,7 @@
 
 <!--  Portfolio Section  -->
 
-    <section class="portfolio" id="'portfolio">
+    <section class="portfolio" id="Portfolio">
         <div class="heading">
             <h2> My Projects </h2>
     
@@ -83,15 +83,16 @@
         <div class="portfolio-content">
             <div class="portfolio-img" >
                 <img src="./assets/images/Refactor HTML and CSS code.png" alt="">
+                <span> Refactoring HTML and CSS </span>
             </div>
-            <div class="portfolio-img">
+            <div class="portfolio-img" id= "project1">
             <img src="./assets/images/27630184.jpg" alt="">
             </div>
-            <div class="portfolio-img">
-                <img src="./assets/images/39424023.jpg" alt="">
+            <div class="portfolio-img" id="project2">
+                <img src="./assets/images/27630184.jpg" alt="">
             </div>
-            <div class="portfolio-img">
-                <img src="./assets/images/38370690.jpg" alt="">
+            <div class="portfolio-img" id="project3">
+                <img src="./assets/images/27630184.jpg" alt="">
             </div>
         </div>
             </div>
@@ -99,20 +100,18 @@
     </div>
     </section>
 
-    <form action="/" class="form">
-        <div class="circle"></div>
+    <!---------------Form Section ------------>
+    <form action="/" class="form" id="Connect">
         <div class="form-inner">
-          <h3> Connect with me </h3>
-          <input type="email" placeholder="Email">
-          <textarea placeholder="Message..." rows="5"></textarea>
-          <button type="submit" href="/">Submit</button>
+            <h3> Connect with me </h3>
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message..." rows="5"></textarea>
+            <button type="submit" href="mailto: asish.dewan93@gmail.com">Submit</button>
         </div>
-      </form>
-    
+    </form>
 
     <!------- Footer ------->
     <footer class="footer">
-        <span> Visit</span>
         <p>
             &copy; 2022 by Asish-dewan 
         </p>
