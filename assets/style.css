@@ -18,6 +18,9 @@
     --bg-color #E6E6FA;
     --text-color:#24305E;
     --hover: #fff;
+    --large-font: 50px;
+    --medium-font: 30px;
+    --small-font: 16px;
 }
 
 li, a, button {
@@ -29,7 +32,7 @@ li, a, button {
 }
 
 header {
-    display: flex;
+    display: flex;   
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
@@ -76,6 +79,18 @@ button:hover {
     background-color: rgb(119, 84, 233);
 
 }
+
+.social {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.bx {
+    font-size: 30px;
+}
+
 /* Variables */
 
 body {
@@ -97,17 +112,19 @@ body {
     align-items: center;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
-    gap: 16px;
+    padding: 0px 20px;
 
-    
 }
 
 .profile{
-    width: 100%;
-
+    display: flex; 
+    flex-wrap: wrap;
+}
+.home-text {
+    display: inline-block;
 }
 
-.home.text span {
+.home-text span {
     font-size: var(--medium-font);
     font-weight: 500;
 }
@@ -125,25 +142,105 @@ body {
     font-size: var(--p-font);
     font-weight: 400;
 }
-
-.social {
-    display: flex;
-    flex-direction: column;
-}
-
 /* About section */
 
 .heading {
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .heading h2 {
     font-size: 30px;
+    border: border-box;
+    border-radius: 50px;
+    background-color: #88f;
+
 }
 
+.about {
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    box-sizing: border-box;
+    border: 5px #88f solid;
+    border-radius: 50px;
+    border-style: outset;
+    
+
+}
 .about-container {
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 16px;
     margin-top: 32px;
+}
+
+.about-text > span {
+    text-decoration: line-through;
+}
+
+.about-text > p {
+text-align: center;
+
+}
+
+/* ------ Portfolio Section ---------*/
+
+.portfolio {
+    text-align: center;
+    margin: 50px auto;
+    box-sizing: border-box;
+    border: 5px #88f solid;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-rows: max-content;
+    margin: auto;
+    box-sizing: border-box;
+    gap: 1rem;
+    margin-top: 2rem;
+
+}
+
+.portfolio-img {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    border-style: outset;
+}
+
+.portfolio-img img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-img img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-inner input, textarea {
+display: block;
+width: 100%;
+padding: 15px;
+margin-bottom: 10px;
+border: none;
+border-radius: 20px;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    text-align: center;
+    background-color: aliceblue;
 }
